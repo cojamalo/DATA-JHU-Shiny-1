@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r}
 knitr::include_graphics('./one.png')
 ```
+<br>
 * Use density plots to explore the probabilities for percent concentration of each fatty acid type!
 <br>
 * It looks like pumpkin oil is typically composed of high concentrations of Linoleic (around 50%) and Oleic (around 33%) acid!
@@ -22,6 +23,7 @@ knitr::include_graphics('./one.png')
 ```{r}
 knitr::include_graphics('./two.png')
 ```
+<br>
 * Using faceting, multiple oils can be compared at the same time!
 <br>
 * Pumpkin and sunflower oil have similar compositions
@@ -34,6 +36,7 @@ knitr::include_graphics('./two.png')
 ```{r cars}
 knitr::include_graphics('./three.png')
 ```
+<br>
 * Since the faceted graphs share the same y-axis, it is easy to look right across to compare the range of fatty acid concentrations
 <br>
 * Choose which oil to order the x-axis by. In this case, the x-axis is ordered by fatty acid concentrations of pumpkin oil.
@@ -45,6 +48,7 @@ knitr::include_graphics('./three.png')
 ```{r pressure}
 knitr::include_graphics('./four.png')
 ```
+<br>
 * Combine all the data points from multiple oils to see the likely compositions if one mixed the oils equally with each other
 <br>
 * A mix between sunflower and pumpkin oil has a wide range of possible values for Oleic and Linoleic acid, while Stearic and Linolenic acid concentrations would not vary by much.

@@ -64,8 +64,8 @@ shinyServer(function(input, output, session) {
             
             ## Final output type
             if (input$plotType == "Density Plot") {
-                ggplot(data = data, aes(x = value, fill = factor(original))) + 
-                    geom_density(adjust=2) + 
+                ggplot(data = data, aes(x = value, fill = factor(original),color = factor(original))) + 
+                    geom_density(adjust=2, alpha = 0.7) + 
                     scale_x_continuous(breaks = c(seq(0,1, by=0.05)), labels = scales::percent) +
                     facet_grid(source~.) +
                     ylim(c(0,100)) +
@@ -104,8 +104,8 @@ shinyServer(function(input, output, session) {
             ## Final output type
             if (input$plotType == "Density Plot") {
                 
-                ggplot(data = data, aes(x = value, fill = factor(original))) + 
-                    geom_density(adjust=2) + scale_x_continuous(breaks = c(seq(0,1, by=0.05)), labels = scales::percent) + 
+                ggplot(data = data, aes(x = value, fill = factor(original), color = factor(original))) + 
+                    geom_density(adjust=2, alpha = 0.7) + scale_x_continuous(breaks = c(seq(0,1, by=0.05)), labels = scales::percent) + 
                     ylim(c(0,100)) +
                     theme(plot.title = element_text(hjust = 0.5)) +
                     labs(title = "Density Plot of Percent Concentration Measurements", y = "P(Percent Concentration)", x = "Percent Concentration")
