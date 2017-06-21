@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r}
 knitr::include_graphics('./one.png')
 ```
+
 <br>
 * Use density plots to explore the probabilities for percent concentration of each fatty acid type!
 <br>
@@ -23,6 +24,7 @@ knitr::include_graphics('./one.png')
 ```{r}
 knitr::include_graphics('./two.png')
 ```
+
 <br>
 * Using faceting, multiple oils can be compared at the same time!
 <br>
@@ -36,6 +38,7 @@ knitr::include_graphics('./two.png')
 ```{r cars}
 knitr::include_graphics('./three.png')
 ```
+
 <br>
 * Since the faceted graphs share the same y-axis, it is easy to look right across to compare the range of fatty acid concentrations
 <br>
@@ -48,6 +51,7 @@ knitr::include_graphics('./three.png')
 ```{r pressure}
 knitr::include_graphics('./four.png')
 ```
+
 <br>
 * Combine all the data points from multiple oils to see the likely compositions if one mixed the oils equally with each other
 <br>
